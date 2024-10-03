@@ -1,0 +1,12 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 16px;
+}
+
+p {
+  margin: 0;
+}

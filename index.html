@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes app</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/buttons.css" />
+    <link rel="stylesheet" href="./css/inputs.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <div class="header-title">
+          <img src="./assets/note-icon.svg" alt="Notes app logo" width="22" height="22" />
+          Notes
+        </div>
+
+        <input
+          type="text"
+          id="search"
+          class="input search-input"
+          placeholder="Search notes..."
+        />
+      </header>
+
+      <main>
+        <button id="add-note-btn" class="button-primary">Add New</button>
+
+        <div id="no-notes">
+          <img
+            src="./assets/info-circle.png"
+            class="info-circle"
+            alt="Information icon, no notes available"
+            width="60"
+            height="60"
+          />
+          <p class="no-notes-title">No notes yet</p>
+          <p class="no-notes-description">
+            Add a note to keep track of your learnings.
+          </p>
+          <button class="button-secondary" id="no-notes-add-note-btn">
+            <img src="./assets/note-plus-icon.svg" alt="Icon for adding a new note" />
+            Add New
+          </button>
+        </div>
+        <ul id="notes-list"></ul>
+      </main>
+
+      <div id="delete-modal" class="modal">
+        <div class="modal-content">
+          <span class="modal-title">Delete note</span>
+          <span>Are you sure you want to delete this note?</span>
+          <div class="modal-action-buttons">
+            <button
+              id="cancel-delete-btn"
+              class="button-secondary modal-button"
+            >
+              Cancel
+            </button>
+            <button id="confirm-delete-btn" class="button-primary modal-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

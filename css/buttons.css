@@ -1,0 +1,69 @@
+.button-primary {
+  background-color: #6b3c9b;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  width: 100%;
+}
+
+.button-primary:hover {
+  background-color: #844dba;
+}
+
+.button-primary:focus {
+  background-color: #5b2f87;
+}
+
+.button-secondary {
+  background-color: white;
+  color: #1b1c1e;
+  border: 1px solid #bcbcbd;
+  border-radius: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+}
+
+.button-secondary:hover {
+  background-color: #e7e7e7;
+}
+
+.button-secondary:focus {
+  background-color: #bdbdbd;
+}
+
+.save-button {
+  width: min-content;
+  align-self: flex-end;
+}
+
+#no-notes-add-note-btn {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.cancel-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #0f75b8;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23.8px;
+}
+
+.cancel-button:hover {
+  text-decoration: underline;
+  text-decoration-color: inherit;
+  text-underline-offset: 4px;
+}
